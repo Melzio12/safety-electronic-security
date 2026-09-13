@@ -76,8 +76,19 @@
     flex-shrink:0;
   }
   .logo .mark svg{width:22px;height:22px;}
-  .logo small{display:block;font-family:'Inter';font-weight:500;font-size:9.5px;letter-spacing:.06em;color:var(--orange-400);}
-  nav.main-nav{display:flex;align-items:center;gap:30px;}
+  .logo img{
+  width:240px;
+  height:auto;
+  display:block;
+  object-fit:contain;
+}
+
+@media (max-width:768px){
+  .logo img{
+    width:190px;
+    height:auto;
+  }
+}
   nav.main-nav a{
     color:rgba(255,255,255,0.82);font-size:14.5px;font-weight:500;
     position:relative;padding:4px 0;transition:color .2s;
@@ -453,7 +464,7 @@
 <header id="siteHeader">
   <div class="wrap headbar">
 <a href="#top" class="logo">
-    <img src="logo-ses.png" alt="SES - Safety and Electronic Security" style="width:240px;height:auto;display:block;">
+    <img src="logo-ses.png" alt="SES - Safety and Electronic Security" style="width:240px;height:auto;display:...">
 </a>
       <a href="#top">Início</a>
       <a href="#produtos">Produtos</a>
